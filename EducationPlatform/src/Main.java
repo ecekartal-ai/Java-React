@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class Main {
 	static Scanner myScanner = new Scanner(System.in).useLocale(Locale.US);
-
+	
 	public static void main(String[] args) {
 		int courseID = 1;
 		long instructorID = 1;
@@ -20,6 +20,7 @@ public class Main {
 					+ "2. for add an instructor\n"
 					+ "3. for add a student\n"
 					+ "4. for register a student\n"
+					+ "5. for display the course information\n"
 					+ "0. for exit\n");
 			
 			choice = myScanner.nextInt();
@@ -114,6 +115,20 @@ public class Main {
 					}
 				}
 				break;
+			case 5:
+				//display course info
+				
+				System.out.printf("Enter course id: ");
+				int courseIDInput_1 = myScanner.nextInt();
+				myScanner.nextLine();
+				
+				for(int i=0; i<coursemanager.courses.size(); i++) {
+					if(coursemanager.courses.get(i).getCourseID() == courseIDInput_1) {
+						coursemanager.printCourseInfo(coursemanager.courses.get(i));
+						
+					}
+				}
+				
 			}
 		} while(!(choice == 0));
 		System.out.println("Exited");

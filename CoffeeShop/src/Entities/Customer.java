@@ -7,7 +7,7 @@ public class Customer {
 	private DateTime birthDate;
 	private long nationalityID;
 
-	public Customer() { 
+	public Customer() {
 
 	}
 
