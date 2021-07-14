@@ -14,7 +14,6 @@ public class CourseManager {
 	public void printCourseInfo(Course course) {
 		System.out.printf("\nCourse ID: ", course.getCourseID()
 				+ "\nCourse Name: ", course.getCourseName()
-				//+ "Course Instructor: ", printInstructorInfo(course.getCourseInstructor())
 				+ "\nCourse Content: \n", course.getCourseContent());
 	}
 	
