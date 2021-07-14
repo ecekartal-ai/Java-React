@@ -1,9 +1,9 @@
 package Abstract;
 import Entities.Customer;
 
-public interface CustomerCheckService {
-	
+public interface CustomerCheckService { 
+
 	boolean checkIfRealPerson(Customer customer);
 
-	
+
 }

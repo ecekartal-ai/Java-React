@@ -5,7 +5,7 @@
  * by the Apache Axis 1.4 Apr 22, 2006 (06:55:48 PDT) WSDL2Java emitter.
  */
 
-package tr.gov.nvi.tckimlik.WS;
+package tr.gov.nvi.tckimlik.WS; 
 
 public class KPSPublicLocator extends org.apache.axis.client.Service implements tr.gov.nvi.tckimlik.WS.KPSPublic {
 
@@ -122,11 +122,11 @@ public class KPSPublicLocator extends org.apache.axis.client.Service implements 
     * Set the endpoint address for the specified port name.
     */
     public void setEndpointAddress(java.lang.String portName, java.lang.String address) throws javax.xml.rpc.ServiceException {
-        
+
 if ("KPSPublicSoap".equals(portName)) {
             setKPSPublicSoapEndpointAddress(address);
         }
-        else 
+        else
 { // Unknown Port Name
             throw new javax.xml.rpc.ServiceException(" Cannot set Endpoint Address for Unknown Port" + portName);
         }

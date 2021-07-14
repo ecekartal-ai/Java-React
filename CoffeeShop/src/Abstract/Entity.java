@@ -1,5 +1,5 @@
 package Abstract;
 
-public interface Entity {
+public interface Entity { 
 
 }
