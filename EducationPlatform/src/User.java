@@ -5,11 +5,11 @@ public class User {
 	private String surname;
 	private String email;
 	private String password;
-	
-	public User() {
-		
+
+	public User() { 
+
 	}
-	
+
 	public User(long id, String name, String surname, String email, String password) {
 		super();
 		this.id = id;
@@ -18,8 +18,8 @@ public class User {
 		this.email = email;
 		this.password = password;
 	}
-	
-	
+
+
 	public long getId() {
 		return id;
 	}

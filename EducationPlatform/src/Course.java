@@ -4,11 +4,11 @@ public class Course {
 	private String courseName;
 	private Instructor courseInstructor;
 	private String courseContent;
-	
-	public Course() {
-		
+
+	public Course() { 
+
 	}
-	
+
 	public Course(int courseID, String courseName, Instructor courseInstructor, String courseContent) {
 		super();
 		this.courseID = courseID;
@@ -16,7 +16,7 @@ public class Course {
 		this.courseInstructor = courseInstructor;
 		this.courseContent = courseContent;
 	}
-	
+
 
 	public int getCourseID() {
 		return courseID;
